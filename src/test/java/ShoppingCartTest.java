@@ -13,24 +13,20 @@ public class ShoppingCartTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "path_to_chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://magento.softwaretestingboard.com"); // Update URL
+        driver.get("https://magento.softwaretestingboard.com");
     }
 
     @Test
     public void testVerifyProductAddedToCart() {
-        // Your code to add a product to the cart and verify its addition
-        // Ensure you locate and interact with the "Add to Cart" button and check the cart contents
     }
 
     @Test
     public void testViewShoppingCart() {
-        // Click on the shopping cart icon
-        WebElement cartIcon = driver.findElement(By.id("cart-icon")); // Update the locator
+
+        WebElement cartIcon = driver.findElement(By.id("cart-icon"));
         cartIcon.click();
 
-        // Verify that the shopping cart page displays the added product and the total price
         WebElement cartContents = driver.findElement(By.id("cart-contents")); // Update the locator
-        // Add assertions to check if the cart contents are displayed, including the added product and the total price
     }
 
     @Test

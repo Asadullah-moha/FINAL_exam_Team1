@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af7f7db4-7e6a-4323-b0d2-58495fe5ca63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/saucedemotest/InvalidLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/saucedemotest/ValidLoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/magento.runner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/runner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CheckoutAndRegistrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomePageContentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ShoppingCartTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserAccountAndSupportTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckoutAndRegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheckoutAndRegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageContentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageContentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +126,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/CheckoutAndRegistrationTest.java</url>
-          <line>21</line>
+          <line>22</line>
           <properties class="CheckoutAndRegistrationTest" method="testPaymentMethodSelection">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

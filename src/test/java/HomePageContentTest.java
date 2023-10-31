@@ -6,6 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.testng.AssertJUnit.assertEquals;
+
 public class HomePageContentTest {
     private WebDriver driver;
 
@@ -13,37 +15,34 @@ public class HomePageContentTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "path_to_chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://magento.softwaretestingboard.com"); // Update URL
+        driver.get("https://magento.softwaretestingboard.com");
     }
 
     @Test
     public void testVerifyHomePageContent() {
         // Verify that the homepage displays a logo
-        WebElement logo = driver.findElement(By.id("logo")); // Update the locator
-        // Add an assertion to check if the logo is displayed
-        // Example: assertTrue(logo.isDisplayed());
+        WebElement logo = driver.findElement(By.id("new-logo-locator"));
 
         // Verify that the navigation menu is visible
-        WebElement navMenu = driver.findElement(By.id("navigation")); // Update the locator
-        // Add an assertion to check if the navigation menu is displayed
+        WebElement navMenu = driver.findElement(By.id("navigation"));
 
         // Verify that the search bar is visible
-        WebElement searchBar = driver.findElement(By.id("search")); // Update the locator
-        // Add an assertion to check if the search bar is displayed
+        WebElement searchBar = driver.findElement(By.id("search"));
 
         // Verify that featured products are displayed on the homepage
-        WebElement featuredProducts = driver.findElement(By.className("featured-products")); // Update the locator
-        // Add an assertion to check if featured products are displayed
+        WebElement featuredProducts = driver.findElement(By.className("featured-products"));
     }
 
     @Test
     public void testVerifyNavigationMenu() {
         // Click on each main category in the navigation menu
-        WebElement category1 = driver.findElement(By.linkText("Category 1")); // Update the link text
+        WebElement category1 = driver.findElement(By.linkText("Category 1"));
         category1.click();
-        // Add assertions to confirm that the category page is displayed
+        String expectedCategoryTitle = "Category 1"; // Replace with the expected category page title
+        String actualCategoryTitle = driver.getTitle(); // Get the actual page title
 
-        // Repeat the process for other categories
+// Assert that the actual page title matches the expected category title
+        assertEquals(expectedCategoryTitle, actualCategoryTitle);
     }
 
     @Test
