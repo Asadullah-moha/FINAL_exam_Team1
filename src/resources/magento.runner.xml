@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Magento Test Suite">
+    <!-- Set parameters for the Magento website -->
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="url" value="https://magento.softwaretestingboard.com"></parameter>
+
+    <test name="Magento Functional Tests">
+        <classes>
+            <!-- Define your test classes here -->
+            <class name="CheckoutAndRegistrationTest"></class>
+            <class name="HomePageContentTest"></class>
+            <class name="ShoppingCartTest"></class>
+            <class name="UserAccountAndSupportTest"></class>
+        </classes>
+    </test>
+</suite>

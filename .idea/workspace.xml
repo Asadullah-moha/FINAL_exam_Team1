@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af7f7db4-7e6a-4323-b0d2-58495fe5ca63" name="Changes" comment="" />
+    <list default="true" id="af7f7db4-7e6a-4323-b0d2-58495fe5ca63" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/saucedemotest/InvalidLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/saucedemotest/ValidLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/magento.runner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/runner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CheckoutAndRegistrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomePageContentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ShoppingCartTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserAccountAndSupportTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,9 +36,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2XIGiW7qYIe3DaDFQS7TUW2Euz6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,6 +54,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "last_directory_selection": "C:/Users/asadu/IdeaProjects/FinalExamSeleniumTeam1/src/main/java",
+    "last_opened_file_path": "C:/Users/asadu/eclipse-workspace/midterm-java-coding",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -49,8 +64,57 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\asadu\IdeaProjects\FinalExamSeleniumTeam1\src\resources" />
       <recent name="C:\Users\asadu\IdeaProjects\FinalExamSeleniumTeam1" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CheckoutAndRegistrationTest.testPaymentMethodSelection">
+    <configuration name="CheckoutAndRegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aug2023SeleniumProject1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckoutAndRegistrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutAndRegistrationTest.testPaymentMethodSelection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aug2023SeleniumProject1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CheckoutAndRegistrationTest" />
+      <option name="METHOD_NAME" value="testPaymentMethodSelection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageContentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aug2023SeleniumProject1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageContentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageContentTest.testVerifyHomePageContent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Aug2023SeleniumProject1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageContentTest" />
+      <option name="METHOD_NAME" value="testVerifyHomePageContent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CheckoutAndRegistrationTest.testPaymentMethodSelection" />
+        <item itemvalue="JUnit.CheckoutAndRegistrationTest" />
+        <item itemvalue="JUnit.HomePageContentTest.testVerifyHomePageContent" />
+        <item itemvalue="JUnit.HomePageContentTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,6 +129,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/CheckoutAndRegistrationTest.java</url>
+          <line>21</line>
+          <properties class="CheckoutAndRegistrationTest" method="testPaymentMethodSelection">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
