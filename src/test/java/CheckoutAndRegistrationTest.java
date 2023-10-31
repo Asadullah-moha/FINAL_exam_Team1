@@ -14,54 +14,53 @@ public class CheckoutAndRegistrationTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "path_to_chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://magento.softwaretestingboard.com"); // Update URL
+        driver.get("https://magento.softwaretestingboard.com");
     }
 
-    // ... Existing test cases for HomePageContent, Navigation Menu, Search, Sorting, Cart operations, and Shipping Info ...
 
     @Test
     public void testPaymentMethodSelection() {
-        WebElement paymentMethod = driver.findElement(By.id("payment-method")); // Update the locator
+        var paymentMethod = driver.findElement(By.id("payment-method"));
         paymentMethod.click();
 
-        WebElement selectedMethod = driver.findElement(By.id("selected-method")); // Update the locator
+        var selectedMethod = driver.findElement(By.id("selected-method"));
     }
 
     @Test
     public void testReviewOrder() {
-        WebElement reviewOrderButton = driver.findElement(By.id("review-order-button")); // Update the locator
+        var reviewOrderButton = driver.findElement(By.id("review-order-button"));
         reviewOrderButton.click();
 
-        WebElement orderDetails = driver.findElement(By.id("order-details")); // Update the locator
+        var orderDetails = driver.findElement(By.id("order-details"));
     }
 
     @Test
     public void testPlaceOrder() {
-        WebElement placeOrderButton = driver.findElement(By.id("place-order-button")); // Update the locator
+        var placeOrderButton = driver.findElement(By.id("place-order-button"));
         placeOrderButton.click();
 
-        WebElement orderConfirmation = driver.findElement(By.id("order-confirmation")); // Update the locator
+        var orderConfirmation = driver.findElement(By.id("order-confirmation"));
     }
 
     @Test
     public void testViewOrderConfirmation() {
-        WebElement orderConfirmationLink = driver.findElement(By.linkText("Order Confirmation")); // Update the link text
+        var orderConfirmationLink = driver.findElement(By.linkText("Order Confirmation"));
         orderConfirmationLink.click();
 
-        WebElement orderDetails = driver.findElement(By.id("order-details"));
+        var orderDetails = driver.findElement(By.id("order-details"));
         Assert.assertTrue("Order details are not displayed on the page", orderDetails.isDisplayed());
     }
 
     @Test
     public void testUserAccountRegistration() {
-        WebElement signUpLink = driver.findElement(By.linkText("Sign Up"));
+        var signUpLink = driver.findElement(By.linkText("Sign Up"));
         driver.get("https://magento.softwaretestingboard.com/customer/account/create/");
 
-        WebElement usernameField = driver.findElement(By.id("username"));
-        WebElement emailField = driver.findElement(By.id("asadullah.mohammad0324@gmail.com"));
-        WebElement passwordField = driver.findElement(By.id("Password1"));
-        WebElement confirmPasswordField = driver.findElement(By.id("confirmPassword"));
-        WebElement registerButton = driver.findElement(By.id("registerButton"));
+        var usernameField = driver.findElement(By.id("username"));
+        var emailField = driver.findElement(By.id("asadullah.mohammad0324@gmail.com"));
+        var passwordField = driver.findElement(By.id("Password1"));
+        var confirmPasswordField = driver.findElement(By.id("confirmPassword"));
+        var registerButton = driver.findElement(By.id("registerButton"));
 
         usernameField.sendKeys("newuser");
         emailField.sendKeys("asadullah.mohammad0324@gmail.com");
@@ -69,7 +68,7 @@ public class CheckoutAndRegistrationTest {
         confirmPasswordField.sendKeys("Password1");
         registerButton.click();
 
-        WebElement successMessage = driver.findElement(By.className("success-message")); // Update with actual class name
+        var successMessage = driver.findElement(By.className("success-message"));
     }
 
     @After

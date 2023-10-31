@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
+<!--suppress ALL -->
 <suite name="regression suite">
-    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="useCloudEnv" value="false"/>
 
     <!--cloud parameters-->
-    <parameter name="envName" value="browserstack"></parameter>
+    <parameter name="envName" value="magento"></parameter>
     <parameter name="os" value="OS X"></parameter>
     <parameter name="os_version" value="Big Sur"></parameter>
     <parameter name="browser_version" value="110"></parameter>
     <!--local & cloud parameters-->
-    <parameter name="url" value="http://www.saucedemo.com"></parameter>
+    <parameter name="url" value="https://magento.softwaretestingboard.com/customer/account/create/"></parameter>
     <parameter name="browserName" value="edge"></parameter>
 
     <test name="login sauce demo test">
