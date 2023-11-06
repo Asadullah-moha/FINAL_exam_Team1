@@ -18,7 +18,6 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import reporting.ExtentManager;
 import reporting.ExtentTestManager;
-import utility.Utility;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -32,7 +31,8 @@ import java.util.Properties;
 
 public class CommonAPI {
     Logger LOG = LogManager.getLogger(CommonAPI.class.getName());
-    public Properties prop = Utility.loadProp();
+    private Object Utility;
+    public Properties prop;
     public WebDriver driver;
     int implicitWait = Integer.parseInt(prop.getProperty("wait.time", "10"));
     String windowMaximize = prop.getProperty("window.maximize", "true");
@@ -44,6 +44,10 @@ public class CommonAPI {
 
     //report setup from line 48 to 105
     public static com.relevantcodes.extentreports.ExtentReports extent;
+
+    public CommonAPI() throws InterruptedException {
+        Utility.wait();
+    }
 
     @BeforeSuite
     public void extentSetup(ITestContext context) {
